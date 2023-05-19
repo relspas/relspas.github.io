@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>DJ Khaled Soundboard</title>
+    <link rel="stylesheet" type="text/css" href="khaledsound.css">
+</head>
+
+<body>
+    <div id="topBar">
+<span style="margin-left:25px;">DJ Khaled Soundboard</span>
+    <a href="index.html"><img src="homeIcon.png" style="float:left; height: 20px; margin-left: 25px;"/></a>
+    <img src="About.png" style="float:right; height: 20px; margin-right: 25px;"/>
+    </div>
+
+<h4 id="sub">
+    Click a picture to play the associated sound
+</h4>
+<table>
+    <tr>
+        <td onclick="djKhaled()" onkeypress="djKhaled()">
+            <img class="pic" src="DJ_Khaled_wtext.jpg" />
+        </td>
+        <td onclick="anotherOne()">
+            <img class="pic" src="another_one_wtext.jpg" />
+        </td>
+        <td onclick="lion()">
+            <img class="pic" src="lion_wtext.jpg" />
+        </td>
+    </tr>
+    <tr>
+        <td onclick="blessUp()">
+            <img class="pic" src="Bless_up_wtext.jpg" />
+        </td>
+        <td onclick="majorKey()">
+            <img class="pic" src="major_key_wtext.jpg" />
+        </td>
+        <td onclick="weTheBest()">
+            <img class="pic" src="we_the_best_wtext.jpg" />
+        </td>
+    </tr>
+    <tr>
+        <td onclick="appreciate()">
+            <img class="pic" src="I_appreciate_that_wtext.jpg" />
+        </td>
+        <td onclick="keyToSuccess()">
+            <img class="pic" src="key_to_success_wtext.jpg" />
+        </td>
+        <td onclick="clothTalk()">
+            <img class="pic" src="Hows_business_wtext.jpg" />
+        </td>        
+    </tr>
+    
+</table>
+<p id="bottomInfo">Compiled by the #BlessUp Team for J Hacks 2016</p>
+<script type="text/javascript">
+//play audio file
+    window.addEventListener("keypress", checkKeyPressed, false);
+    var playing = new Array();
+    for (i = 0; i < 9; i++) {
+        playing[i] = false;
+    }
+
+    function checkKeyPressed(e) {
+        if (e.charCode == "113") {
+            if (playing[0] == false) {
+                playing[0] = true;
+                djKhaled();
+            }
+        } else if (e.charCode == "119") {
+            if (playing[1] == false) {
+                playing[1] = true;
+                anotherOne();
+            }
+        } else if (e.charCode == "101") {
+            if (playing[2] == false) {
+                playing[2] = true;
+                lion();
+            }
+        } else if (e.charCode == "97") {
+            if (playing[3] == false) {
+                playing[3] = true;
+                blessUp();
+            }            
+        } else if (e.charCode == "115") {
+            if (playing[4] == false) {
+                playing[4] = true;
+                majorKey();
+            }
+        } else if (e.charCode == "100") {
+            if (playing[5] == false) {
+                playing[5] = true;
+                weTheBest();
+            }
+        } else if (e.charCode == "122") {
+            if (playing[6] == false) {
+                playing[6] = true;
+                appreciate();
+            }            
+        } else if (e.charCode == "120") {
+            if (playing[7] == false) {
+                playing[7] = true;
+                keyToSuccess();
+            }
+        } else if (e.charCode == "99") {
+            if (playing[8] == false) {
+                playing[8] = true;
+                howsBusiness();
+            }         
+        }
+    }
+    function appreciate() {
+        var audio = new Audio('I_Appreciate_That.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[6] = false
+        };
+    }
+    function lion() {
+        var audio = new Audio('LION.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[2] = false
+        };
+    }
+    function anotherOne() {
+        var audio = new Audio('Another_One3.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[1] = false
+        };
+    }
+    function majorKey() {
+        var audio = new Audio('Major_Key2.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[4] = false
+        };
+    }
+    function blessUp() {
+        var audio = new Audio('Bless_Up.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[3] = false
+        };
+    }
+    function djKhaled() {
+        var audio = new Audio('DJ_Khaled.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[0] = false
+        };
+    }
+    function weTheBest() {
+        var audio = new Audio('We_The_Best.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[5] = false
+        };
+    }
+    function keyToSuccess() {
+        var audio = new Audio('Key_to_More_Success.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[7] = false
+        };
+    }
+    function clothTalk() {
+        var audio = new Audio('Cloth_Talk.mp3');
+        audio.play();
+        audio.onended = function() {
+            playing[8] = false
+        };
+    }
+//for looping beats, just do audio.loop = true;
+
+</script>
+
+</body>
+</html>
+
+
+

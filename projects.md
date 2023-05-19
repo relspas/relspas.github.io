@@ -12,7 +12,7 @@ layout: default
 
 ## Hackathon
 - 2017 JHacks MLH - WorkRight
-- 2016 JHacks - DJ Khaled Soundboard
+- 2016 JHacks - [DJ Khaled Soundboard](jhacks2016/)
 
 ## Graduate
 - CS6200 - Multithreaded File Server & Distributed File System

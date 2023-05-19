@@ -1,0 +1,69 @@
+* {
+	font-family: roboto, trebuchet MS, sans-serif;
+}
+#mainTable {
+    margin-left: 19%;
+    margin-right: 19%;
+    cursor: pointer;
+    padding-top: 50px;
+}
+#leftShark {
+	float: left;
+	margin-left: 15px;
+	text-align: center;
+	padding-top: 50px;
+}
+td {
+    padding-top: 10px;
+    padding-left: 	10px;
+}
+.pic {
+	height: 150px;
+}
+#info {
+	margin-left: 17%;
+	padding-top: 50px;
+}
+#sub {
+	margin-left: 17%;
+	padding-top: 50px;
+}
+#topBar {
+	height: 64dp;
+	background-color: blue;
+	color: white;
+	margin-top: -10px;
+	margin-right: -10px;
+	margin-left: -10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14pt;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  width: 100%;
+}
+#topBar1 {
+	background-color: blue;
+	color: white;
+	margin-top: -21px;
+	margin-right: -10px;
+	padding-top: 15px;
+	margin-left: -10px;
+	padding-bottom: 15px;
+	font-size: 14pt;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  width: 100%;
+}
+#about {
+	float: right;
+	margin-right: 25px;
+}
+#bottomInfo {
+	color:blue;
+	font-size: 8pt;
+	margin-top: 150px;
+	margin-left: 17%;
+}
