@@ -10,9 +10,9 @@ layout: default
 
 ## CourseHunter/GrabClasses
 
-## JHacks Hackathon
-- 2017 MLH - WorkRight
-- 2016 - DJ Khaled Soundboard
+## Hackathon
+- 2017 JHacks MLH - WorkRight
+- 2016 JHacks - DJ Khaled Soundboard
 
 ## Graduate
 - CS6200 - Multithreaded File Server & Distributed File System
