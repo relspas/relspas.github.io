@@ -12,11 +12,11 @@ Formal university research
 - Develop rectifier circuit with symmetric CTE for minimal delamination of attach [poster](pages/development_TLPS_poster.pdf) and [paper](pages/development_TLPS_paper.pdf).
 
 ## UMD
-- [Graphen Ink](pages/graphene_ink.pdf)
+- [Graphene Ink](pages/graphene_ink.pdf)
 - [Sulfur Battery Reactivation](pages/sulfur_batteries.pdf)
 
 ## UCLA
 - [Graphene Synthesis using CVD](pages/uclaposterpresentation.jpg)
 
 ## NASA
-- [Doppler weather radar validation](nasa_poster.pdf)
+- [Doppler weather radar validation](pages/nasa_poster.pdf)

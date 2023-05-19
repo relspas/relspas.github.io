@@ -21,4 +21,4 @@ layout: default
 - Senior Capstone - Rehabilitation Robot
 - ENEE324 - Card Counting
 - ENES100 - Autonomous Sand Rover Competition
-- ENES102 Truss Building Competition
+- ENES102 - Truss Building Competition
