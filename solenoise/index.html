@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.4.8/plyr.css">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body id="page_body">
+	<div class="center-horizontal"><h1>Solenoise - Piano Playing Robot</h1></div>
+	<!-- <div class="center-horizontal"><h2></h2></div> -->
+
+	<br>
+
+		<div class="center-horizontal"><h3>Pirates of the Caribbean Theme</h3></div>
+	
+	<div class="plyr-horiz-container">
+		<!-- <video controls crossorigin playsinline poster="images/poster_pirates.png" id="player3">
+			<source src="images/VID_20160807_123451780.mp4" type="video/mp4" size="100">
+			<a href="images/VID_20160807_123451780.mp4" download>Download</a>
+		</video> 
+width="956" height="538"
+	-->
+		<iframe style="position: relative" width="100%" height="500px" src="https://www.youtube.com/embed/WbMJrjFNDhg" title="Solenoise - He&#39;s a Pirate" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+
+	<br>
+
+		<div class="center-horizontal"><h3>Felix Mendelssohn, Allegro di molto in B-Flat Minor, Op. 30: No. 2</h3></div>
+
+
+	<div class="plyr-horiz-container">
+		<!-- <video controls crossorigin playsinline poster="images/poster_unknown.png" id="player4">
+			<source src="images/VID_20160810_222514022.mp4" type="video/mp4" size="100">
+			<a href="images/VID_20160810_222514022.mp4" download>Download</a>
+		</video> -->
+		<iframe width="100%" height="538" src="https://www.youtube.com/embed/njD8RnvFxkE" title="Solenoise - Felix Mendelssohn, Allegro di molto in B-Flat Minor, Op. 30: No. 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+<br>
+
+	<div class="center-horizontal max-width-750">
+		<h2>Two engineering students procrastinate during the final exams of their junior year of college. The computer engineer had an epiphany, lounging upsidedown on a sofa and looking at the ceiling in a study carrel: a never before created electro-mechanical contraption that could produce entrancing music.</h2>
+		<h2>He vividly conveyed his mental image to the other engineer, equally excited for a reason to pause from studying. They decided to start designing immediately. This is the story of the humble beginnings, successes, failures, and ultimate triumph of the two most creative engineers in the world.</h2>
+	</div>
+
+	<!-- OUTLINE -->
+	<div class="center-horizontal"><h2><u>Outline</u></h2></div>
+	<ul class="max-width-750">
+		<li><a href="#section-planning"><u>Planning</u></a></li>
+		<li><a href="#section-design"><u>Design</u></a></li>
+		<ul>
+			<li>Hardware</li>
+			<li><a href="#section-song-processing"><u>Song Processing</u></a></li>
+			<li>Data Structures</li>
+		</ul>
+		<li><a href="#section-prototyping"><u>Prototyping</u></a></li>
+		<li><a href="#section-final-build"><u>Final Build</u></a></li>
+		<li><a href="instructables.html"><u>Instructables Link</u></a></li>
+		<li><a href="#section-word-creators"><u>A Word from the Creators</u></a></li>
+	</ul>
+
+	<!-- PLANNING -->
+	<div class="center-horizontal">
+		<h2 id="section-planning"><u>Planning</u></h2>
+		<img style="width: 500px;" src="images/20160620_164803.jpg" alt="solenoise sketch sideview">
+		<img style="width: 500px;" src="images/20190224_215414.jpg" alt="cross section">
+		<img style="width: 500px;" src="images/20190224_215516.jpg" alt="engineering view">
+		<img style="width: 500px;" src="images/IMG_20160623_212402219.jpg" alt="electrical layout">
+		<img style="width: 500px;" src="images/20190224_215624.jpg" alt="electrical layout 2">
+		<img style="width: 500px;" src="images/20190224_215656.jpg" alt="microcontroler view">
+
+	</div>
+
+	<!-- SONG PROCESSING -->
+	<br>
+	<div class="center-horizontal max-width-750">
+		<h2 id="section-song-processing"><u>Song Processing</u></h2>
+		<!-- &rarr is this char: "→" -->
+	</div>
+	<div class="max-width-750">
+		<p>Basic Outline: Each arrow below represents processing that we would need to apply to our song data.<p>
+	</div>
+	<div class="center-horizontal max-width-750">
+		<h2>MIDI<br>&darr;<br>CSV<br>&darr;<br>Our own binary format<br>&darr;<br>Compressed binary</h2>
+	</div>
+	<div class="max-width-750">
+		<p>To make data transfer between the the processing stage and the playing stage convenient, we developed a data structure to neatly contian the data. Music would be stored in a 2d array, where each row represented a time stamp, and each column represented a note. A 1 means that note is played; a zero means it's not. So it would look something like this if I were to walk up each note.</p>
+		<pre><code>
+byte music[][5] = { {1,0,0,0,0},
+                    {0,1,0,0,0},
+                    {0,0,1,0,0},
+                    {0,0,0,1,0},
+                    {0,0,0,0,1} };
+
+music[0] //the piano keys played on the first time stamp
+music[0][3] //whether the second note is played during the first time stamp  
+		</code></pre>
+		<h3><u>Optimization 1</u></h3>
+		<p>Storing each number as an byte is wasteful, since a byte on the ATmega chip is 8 bits. We could be using 8 times less data if we stored our binary array as a bit array. If we need  more than 8 bits, we just add another byte column to our array. The above song would look like this:
+		<pre><code>
+byte music[][1] = { {B10000000}
+                    {B01000000}
+                    {B00100000}
+                    {B00010000}
+                    {B00001000} };
+
+music[0] //the piano keys played on the first time stamp
+music[0] & B01000000//whether the second note is played during the first time stamp
+		</code></pre>
+		<h3><u>Optimization 2</u></h3>
+		<p>Often a note is held down for a while and adjacent rows in the array can often be found as duplicates. We'll leverage that heuristic and compress adjacent time stamps by encoding the number of duplicates in the last 4 bits of the row. (This leaves 60bits, and hence 60 keys on the piano, still usable). This provides another 16x max-compression rate.
+		<pre><code>
+This example song:
+byte music[][8] = {
+  {B00000000,...,B00100000,...,B00000000},
+  {B00000000,...,B00100000,...,B00000000},
+  {B00000000,...,B00100000,...,B00000000} 
+};
+
+Converts to :
+byte music[][8] = { 
+  {B00000000,...,B00100000,...,B00000010} 
+};
+		</code></pre>
+		<h3><u>Optimization 3</u></h3>
+		<p>If you store a variable in the SRAM of the ATMega2560 chip (verify that's what we have), we have a max cap of 8 kilobytes that can be used. However, there's another portion of memory lesser known about -- the Flash. No, he doesn't wear a red skin tight suit. The ATMega2560's flash can store 256 kilobytes. That's an increase of 32x!</p>
+		<div class="center-horizontal">Code: <a href="https://github.com/relspas/Solenoise">https://github.com/relspas/Solenoise</a></div>
+	</div>
+
+	<!-- PROTOTYPING -->
+	<br>
+	<div class="center-horizontal">
+		<h2 id="section-prototyping"><u>Prototyping</u></h2>
+	</div>
+
+	<br>
+	<div class="center-horizontal">
+		<h3>The solenoise fetus: Mary had a little lamb</h3>
+	</div>
+	<div class="plyr-vert-container">
+		<!-- <video controls crossorigin playsinline poster="images/poster_fetus_1.png" id="player2">
+			<source src="images/VID_20160713_224352760.mp4" type="video/mp4" size="100">
+			<a href="images/VID_20160713_224352760.mp4" download>Download</a>
+		</video> -->
+		<iframe width="352" height="626" src="https://www.youtube.com/embed/E8dD3-iXjLo" title="Solenoise - The Solenoise Fetus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+	<br>
+	<div class="center-horizontal"><h3>First Major Fail</h3></div>
+	<div class="plyr-horiz-container">
+		<!-- <video controls crossorigin playsinline poster="images/poster_test_1_resize.png" id="player0">
+			<source src="images/20160619_151246.mp4" type="video/mp4" size="100">
+			<a href="images/20160619_151246.mp4" download>Download</a>
+		</video> -->
+		<iframe width="100%" height="538" src="https://www.youtube.com/embed/AIj3uGzTw1k" title="Solenoise - first major fail" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+	<br>
+	<div class="center-horizontal">
+		<h3>First Working Test</h3>
+	</div>
+	<div class="plyr-horiz-container">
+		<!-- <video controls crossorigin playsinline poster="images/poster_real_test.png" id="player5">
+			<source src="images/VID_20160628_184500071.mp4" type="video/mp4" size="100">
+			<a href="images/VID_20160628_184500071.mp4" download>Download</a>
+		</video> -->
+		<iframe width="100%" height="538" src="https://www.youtube.com/embed/cllpfB6xRng" title="Solenoise - First Working Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+	<!-- FINAL BUILD -->
+	<br>
+	<div class="center-horizontal">
+		<h2 id="section-final-build"><u>Final Build</u></h2>
+		<div class="center-horizontal"><h3>Squids, wires, soldering, and patience.</h3></div>
+		<img style="width: 500px;" src="images/20160712_233741.jpg" alt="MDF cutaway piano fit">
+		<!-- <img style="width: 500px;" src="images/20160710_230909.jpg" alt="squids"> -->
+		<img style="width: 500px;" src="images/IMG_20160724_190527839_HDR.jpg" alt="wires">
+		<img style="width: 500px;" src="images/IMG_20160725_220937102_HDR.jpg" alt="bundeled wires">
+		<img style="width: 500px;" src="images/IMG_20160725_210228490_HDR.jpg" alt="diligence">
+		<img style="width: 500px;" src="images/IMG_20160726_011152723.jpg" alt="hulking">
+	</div>
+
+	<!-- A WORD FROM THE CREATORS -->
+	<br>
+	<div class="center-horizontal">
+		<h2 id="section-word-creators"><u>A Word from the Creators</u></h2>
+	</div>
+	<div class="center-horizontal"><img class="max-width-650" src="images/IMG_20160721_221228349.jpg" alt="The smartest people in the world"></div>
+	<div class="center-horizontal max-width-750">
+		<h3>We love building, innovating, designing, creating, and having fun. Can you believe engineers can do that? Neither can we. Over the course of an entire summer, we really poured our heart into this project, and collecting all of the data and building this site was equally as emotional. When GE sponsors us for our next model of Solenoise, we'll be ready.</h3>
+		<h3>Website made 2/7/19-4/9/19</h3>
+	</div>
+
+<script src="https://cdn.plyr.io/3.4.8/plyr.js"></script>
+<script>
+	var player = []
+	for (var i = 0; i <= 5; i++) {
+		player[i] = new Plyr('#player'+i);
+	};
+	// const player = new Plyr('#player');
+	// const player2 = new Plyr('#player2');
+	// const player3 = new Plyr('#player3');
+	// const player4 = new Plyr('#player4');
+	// const player5 = new Plyr('#player5');
+</script>
+
+</body>
+</html>
+<!-- YOU WIN A MILLION DOLLARS FOR FINDING THIS -->
