@@ -9,7 +9,7 @@ layout: default
 - Class waitlisting system at UMD, GW, and CUNY.
 
 ## Hackathon
-- 2017 JHacks MLH - WorkRight - First Place
+- 2017 JHacks MLH - WorkRight - [First Place](https://umdsbs.wordpress.com/2017/02/20/maryland-hillel-hosts-second-annual-shabbat-friendly-jhacks/)
 - 2016 JHacks - [DJ Khaled Soundboard](jhacks2016/)
 
 ## Graduate
