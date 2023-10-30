@@ -8,3 +8,4 @@ layout: default
 - [Self Contradiction: How Shlomo became Kohelet](/torah/Self-Contradiction-How Shlomo became Kohelet.pdf)
 - [Tzafnat Paneach: Dream interpretation](/torah/Tzafnat Paneach-Dream interpretation.pdf)
 - [Yonah, Iyov, & Darth Vader: What do Tragic Heroes Teach us about Repentance?](/torah/Yonah, Iyov, & Darth Vader-What do Tragic Heroes Teach us about Repentance.pdf)
+- [How do I go on a Journey like Avraham?](/torah/How do I go on a Journey like Avraham.pdf)
