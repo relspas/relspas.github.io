@@ -2,7 +2,7 @@
 title: Torah
 layout: default
 ---
-## Source Sheets
+# Source Sheets
 - [Are Grasshoppers Kosher?](/torah/Are Grasshoppers Kosher.pdf)
 - [Dairy on Sukkot](/torah/Dairy on Sukkot.pdf)
 - [Self Contradiction: How Shlomo became Kohelet](/torah/Self-Contradiction-How Shlomo became Kohelet.pdf)
