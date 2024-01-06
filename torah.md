@@ -9,3 +9,6 @@ layout: default
 - [Tzafnat Paneach: Dream interpretation](/torah/Tzafnat Paneach-Dream interpretation.pdf)
 - [Yonah, Iyov, & Darth Vader: What do Tragic Heroes Teach us about Repentance?](/torah/Yonah, Iyov, & Darth Vader-What do Tragic Heroes Teach us about Repentance.pdf)
 - [How do I go on a Journey like Avraham?](/torah/How do I go on a Journey like Avraham.pdf)
+
+# Calendars
+- [Daf Yomi Cycle 14 (2020-2027)](/torah/Daf yomi machzor 14.pdf)
