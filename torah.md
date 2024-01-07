@@ -11,4 +11,4 @@ layout: default
 - [How do I go on a Journey like Avraham?](/torah/How do I go on a Journey like Avraham.pdf)
 
 # Calendars
-- [Daf Yomi Cycle 14 (2020-2027)](/torah/Daf yomi machzor 14.pdf)
+- [Daf Yomi Cycle 14 (2020-2027)](/torah/Daf yomi machzor 14.pdf) 
