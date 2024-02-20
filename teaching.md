@@ -5,6 +5,9 @@ layout: default
 # Tutoring
 - I tutor math and computer science at all levels, from elementery school through college. To book an appointment click [here](https://calendly.com/mathcs/45min).
 
+# JHU APL STEM Academy
+- Python II (Instructor) -- Spring 2024
+
 # UMBC
 - CMSC313 Assembly Language and Computer Organization (Instructor) -- Spring 2024
 
