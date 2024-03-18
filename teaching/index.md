@@ -12,15 +12,15 @@ has_children: true
 # John's Hopkins APL STEM Academy
 - **Python II** -- Instructor -- Spring 2024
 
-# GaTech
+# Georgia Tech
 - **CS6515 Graduate Algorithms** -- TA -- Summer 2023
 
-# UMD
+# University of Maryland
 - **ENES100 Engineering Design** -- TA -- Spring 2016
 - **ENEE140 Programming for Electrical Engineers** -- TA -- Fall 2016
 
 # Martin Luther King Jr. Middle School
-- **Robotics Educator** -- Instructor -- Spring 2016
+- **7th Grade Robotics** -- Instructor -- Spring 2016
 
 # City of Angels
 - **Algebra I** -- Tutor -- Spring 2013

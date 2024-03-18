@@ -2,6 +2,7 @@
 title: Research
 layout: default
 ---
+# Research
 Here is a list of my work in formal university research before and during college.
 
 ### Nature Journal
@@ -16,7 +17,7 @@ Here is a list of my work in formal university research before and during colleg
 - [Sulfur Battery Reactivation](research/sulfur_batteries.pdf)
 
 ### UCLA
-- [Graphene Synthesis using CVD](research/uclaposterpresentation.jpg)
+- [Graphene Synthesis using CVD](research/uclaposterpresentation.jpg) as part of the High School Science Research Program (HSSRP) in 2011 
 
 ### NASA
 - [Doppler weather radar validation](research/nasa_poster.pdf)
