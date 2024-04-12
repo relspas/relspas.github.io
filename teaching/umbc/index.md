@@ -16,3 +16,8 @@ parent: Teaching
 10. [Counters](11-Counters.pdf)
 11. [Registers](12-Registers.pdf)
 12. [Computer organization](13-Computer-organization.pdf)
+13. [x86 Architecture](14-x86-architecture.pdf)
+14. [x86 Assembly](15-x86-Assembly.pdf)
+15. [x86 Assembly II](16-x86-Assembly-II.pdf)
+16. [GDB](17-GDB.pdf)
+17. [x86 Branches and Subroutines](18-x86-Branches-Subroutines.pdf)
