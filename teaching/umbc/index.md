@@ -3,7 +3,10 @@ title: UMBC
 layout: default
 parent: Teaching
 ---
-# CMSC313 (Spring 2014)
+# CMSC313
+
+## Syllabus
+[Syllabus - Spring 2024](Syllabus.pdf)
 
 ## Slides
 1. [Introduction](01-intro.pdf)
@@ -24,6 +27,7 @@ parent: Teaching
 16. [GDB](17-GDB.pdf)
 17. [x86 Branches and Subroutines](18-x86-Branches-Subroutines.pdf)
 18. [C functions](19-C-functions.pdf)
+19. [Compiler/architecture optimizations](20-Compiler-Architecture-Optimizations.pdf)
 
 ## Homework
 1. [Homework 1](CMSC313_HW1.pdf)
