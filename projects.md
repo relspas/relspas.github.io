@@ -7,6 +7,7 @@ layout: default
 
 ### Personal
 - Robotic solenoid array to [play any piece of music](solenoise/) on a piano.
+- Wikipedia citation template [interlanguage translation tool](https://raphaelelspas.com/Wikipedia-citation-translation/).
 - Mapping all UMD web cameras integrating with Google Maps API.
 - Course waitlisting system at University of Maryland, George Washington University, and CUNY.
 - App that tracks progress of patients recovering from addiction and reports information to nurses and guardians.
