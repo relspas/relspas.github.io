@@ -3,25 +3,20 @@ title: Teaching
 layout: default
 has_children: true
 ---
-# Teaching
-### Tutoring
-- I tutor math and computer science at all levels, from elementery school through college. To book an appointment click [here](https://calendly.com/mathcs/45min). 
 
-### UMBC
-- [CMSC313 Assembly Language and Computer Organization](umbc) -- Adjunct Professor -- Spring 2024
+## **Private Tutoring** 
+- Math and Computer Science at all levels (elementary through college). Book an appointment [here!](https://calendly.com/mathcs/45min)
 
-### John's Hopkins APL STEM Academy
-- Python II -- Instructor -- Spring 2024
+# College 
+- **UMBC** — CMSC313 Assembly Language and Computer Organization, Adjunct Professor — Spring 2024
+- **Georgia Tech** — CS6515 Graduate Algorithms, TA — Summer 2023
+- **University of Maryland** — ENES100 Engineering Design, TA — Spring 2016
+- **University of Maryland** — ENEE140 Programming for Electrical Engineers, TA — Fall 2016
 
-### Georgia Tech
-- CS6515 Graduate Algorithms -- TA -- Summer 2023
+# High School
+- **Johns Hopkins APL STEM Academy** — Python II, Instructor — Spring 2024
+- **City of Angels** — Algebra I, Tutor — Spring 2013
 
-### University of Maryland
-- ENES100 Engineering Design -- TA -- Spring 2016
-- ENEE140 Programming for Electrical Engineers -- TA -- Fall 2016
-
-### Martin Luther King Jr. Middle School
-- 7th Grade Robotics -- Instructor -- Spring 2016
-
-### City of Angels
-- Algebra I -- Tutor -- Spring 2013
+# Middle School
+- **MASA Israel Teaching Fellowship** — 7th–9th Grade English — Spring 2025
+- **Martin Luther King Jr. Middle School** — 7th Grade Robotics, Instructor — Spring 2016
