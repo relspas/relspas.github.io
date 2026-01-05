@@ -13,7 +13,7 @@ layout: default
 - App that tracks progress of patients recovering from addiction and reports information to nurses and guardians.
 
 ### Hackathon
-- 2017 JHacks MLH - [WorkRight](https://umdsbs.wordpress.com/2017/02/20/maryland-hillel-hosts-second-annual-shabbat-friendly-jhacks/) - First Place
+- 2017 JHacks MLH - [WorkRight](https://web.archive.org/web/20200801051412/https://umdsbs.wordpress.com/2017/02/20/maryland-hillel-hosts-second-annual-shabbat-friendly-jhacks/) - First Place
 - 2016 JHacks - [DJ Khaled Soundboard](jhacks2016/) - Crowd Favorite
 
 ### Graduate

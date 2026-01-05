@@ -13,4 +13,8 @@ layout: default
 
 ### Calendars
 - [Daf Yomi Cycle 14 (2020-2027)](/torah/Daf yomi machzor 14.pdf)
-- [929 Cycle 3 (2022-2025)](929-machzor-3.pdf) 
+- [929 Cycle 3 (2022-2025)](929-machzor-3.pdf)
+
+### Programs
+- [Rashi translator for theMercava.com](https://github.com/relspas/Mercava-Translator)
+- [Longest sequence of unique maarivs](https://github.com/relspas/unique-chanukah-maariv-sequence)
