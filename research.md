@@ -3,7 +3,10 @@ title: Research
 layout: default
 ---
 # Research
-Here is a list of my work in formal university research before and during college. [Google Scholar](https://scholar.google.com/citations?user=XrSDmVgAAAAJ&hl=en&oi=ao).
+Here is a list of my work in formal research. [Google Scholar](https://scholar.google.com/citations?user=XrSDmVgAAAAJ&hl=en&oi=ao).
+
+### icardio.ai
+- Using [Deep Learning](https://www.jacc.org/doi/abs/10.1016/j.jacadv.2026.102867) to segment Intracardiac Echocardiography in realtime.
 
 ### Nature Journal
 - [Authored paper](https://www.nature.com/articles/srep17703) on making electronic substrates out of wood.
